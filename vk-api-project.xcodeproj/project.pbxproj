@@ -54,14 +54,38 @@
 		885AA86128CA142500BFC779 /* vk-api-project */ = {
 			isa = PBXGroup;
 			children = (
+				885AA87628CA16BC00BFC779 /* Core */,
+				885AA87728CA16C600BFC779 /* Screens */,
+				885AA87828CA16D000BFC779 /* Resources */,
+			);
+			path = "vk-api-project";
+			sourceTree = "<group>";
+		};
+		885AA87628CA16BC00BFC779 /* Core */ = {
+			isa = PBXGroup;
+			children = (
 				885AA86228CA142500BFC779 /* AppDelegate.swift */,
 				885AA86428CA142500BFC779 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		885AA87728CA16C600BFC779 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
 				885AA86628CA142500BFC779 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		885AA87828CA16D000BFC779 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				885AA86B28CA142500BFC779 /* Assets.xcassets */,
 				885AA86D28CA142500BFC779 /* LaunchScreen.storyboard */,
 				885AA87028CA142500BFC779 /* Info.plist */,
 			);
-			path = "vk-api-project";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDUQ8YSRC8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "vk-api-project/Info.plist";
+				INFOPLIST_FILE = "vk-api-project/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -304,7 +328,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VDUQ8YSRC8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "vk-api-project/Info.plist";
+				INFOPLIST_FILE = "vk-api-project/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
