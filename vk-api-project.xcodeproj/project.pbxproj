@@ -13,6 +13,12 @@
 		885AA86C28CA142500BFC779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885AA86B28CA142500BFC779 /* Assets.xcassets */; };
 		885AA86F28CA142500BFC779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885AA86D28CA142500BFC779 /* LaunchScreen.storyboard */; };
 		885AA87A28CA19EF00BFC779 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AA87928CA19EF00BFC779 /* FriendsViewController.swift */; };
+		887653D428CCE47D00B2761A /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887653D328CCE47D00B2761A /* FriendsViewModel.swift */; };
+		887653D628CCE4DA00B2761A /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887653D528CCE4DA00B2761A /* FriendsAPI.swift */; };
+		887653D928CCE59F00B2761A /* FriendsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887653D828CCE59F00B2761A /* FriendsResponse.swift */; };
+		887653DC28CCE61F00B2761A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 887653DB28CCE61F00B2761A /* SDWebImage */; };
+		887653DE28CCE63F00B2761A /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887653DD28CCE63F00B2761A /* FriendCell.swift */; };
+		887653E128CCE6A000B2761A /* UIView+PinEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887653E028CCE6A000B2761A /* UIView+PinEdges.swift */; };
 		88DA3D2828CC660600961197 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2728CC660600961197 /* Session.swift */; };
 		88DA3D2A28CC6D7100961197 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2928CC6D7100961197 /* MainTabBarViewController.swift */; };
 		88DA3D2C28CC6E7D00961197 /* CommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */; };
@@ -27,6 +33,11 @@
 		885AA86E28CA142500BFC779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		885AA87028CA142500BFC779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885AA87928CA19EF00BFC779 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		887653D328CCE47D00B2761A /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
+		887653D528CCE4DA00B2761A /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
+		887653D828CCE59F00B2761A /* FriendsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsResponse.swift; sourceTree = "<group>"; };
+		887653DD28CCE63F00B2761A /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		887653E028CCE6A000B2761A /* UIView+PinEdges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinEdges.swift"; sourceTree = "<group>"; };
 		88DA3D2728CC660600961197 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		88DA3D2928CC6D7100961197 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887653DC28CCE61F00B2761A /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +74,9 @@
 		885AA86128CA142500BFC779 /* vk-api-project */ = {
 			isa = PBXGroup;
 			children = (
+				887653DF28CCE67C00B2761A /* Extensions */,
 				885AA87628CA16BC00BFC779 /* Core */,
+				887653D728CCE58100B2761A /* Models */,
 				885AA87728CA16C600BFC779 /* Screens */,
 				88DA3D2628CC65F200961197 /* Services */,
 				885AA87828CA16D000BFC779 /* Resources */,
@@ -100,10 +114,27 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		887653D728CCE58100B2761A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				887653D828CCE59F00B2761A /* FriendsResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		887653DF28CCE67C00B2761A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				887653E028CCE6A000B2761A /* UIView+PinEdges.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		88DA3D2628CC65F200961197 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				88DA3D2728CC660600961197 /* Session.swift */,
+				887653D528CCE4DA00B2761A /* FriendsAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -119,7 +150,9 @@
 		88DA3D2E28CC78BE00961197 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				887653D328CCE47D00B2761A /* FriendsViewModel.swift */,
 				885AA87928CA19EF00BFC779 /* FriendsViewController.swift */,
+				887653DD28CCE63F00B2761A /* FriendCell.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -148,6 +181,9 @@
 			dependencies = (
 			);
 			name = "vk-api-project";
+			packageProductDependencies = (
+				887653DB28CCE61F00B2761A /* SDWebImage */,
+			);
 			productName = "vk-api-project";
 			productReference = 885AA85F28CA142500BFC779 /* vk-api-project.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +212,9 @@
 				Base,
 			);
 			mainGroup = 885AA85628CA142500BFC779;
+			packageReferences = (
+				887653DA28CCE61F00B2761A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 885AA86028CA142500BFC779 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -202,9 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887653DE28CCE63F00B2761A /* FriendCell.swift in Sources */,
+				887653D428CCE47D00B2761A /* FriendsViewModel.swift in Sources */,
 				88DA3D2828CC660600961197 /* Session.swift in Sources */,
+				887653E128CCE6A000B2761A /* UIView+PinEdges.swift in Sources */,
+				887653D928CCE59F00B2761A /* FriendsResponse.swift in Sources */,
 				88DA3D2C28CC6E7D00961197 /* CommunitiesViewController.swift in Sources */,
 				885AA87A28CA19EF00BFC779 /* FriendsViewController.swift in Sources */,
+				887653D628CCE4DA00B2761A /* FriendsAPI.swift in Sources */,
 				885AA86728CA142500BFC779 /* AuthViewController.swift in Sources */,
 				88DA3D2A28CC6D7100961197 /* MainTabBarViewController.swift in Sources */,
 				885AA86328CA142500BFC779 /* AppDelegate.swift in Sources */,
@@ -416,6 +460,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		887653DA28CCE61F00B2761A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		887653DB28CCE61F00B2761A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 887653DA28CCE61F00B2761A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 885AA85728CA142500BFC779 /* Project object */;
 }
