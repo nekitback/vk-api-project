@@ -92,8 +92,8 @@ extension AuthViewController: WKNavigationDelegate {
         Session.shared.expiresIn = Int(expiresIn) ?? 0
         Session.shared.userId = Int(userId) ?? 0
         
-        let friendsViewController = FriendsViewController()
-        navigationController?.pushViewController(friendsViewController, animated: true)
+        let mainTabBarViewController = MainTabBarViewController()
+        navigationController?.pushViewController(mainTabBarViewController, animated: true)
         
         decisionHandler(.cancel)
     }

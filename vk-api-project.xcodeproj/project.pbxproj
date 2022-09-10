@@ -14,6 +14,8 @@
 		885AA86F28CA142500BFC779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885AA86D28CA142500BFC779 /* LaunchScreen.storyboard */; };
 		885AA87A28CA19EF00BFC779 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AA87928CA19EF00BFC779 /* FriendsViewController.swift */; };
 		88DA3D2828CC660600961197 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2728CC660600961197 /* Session.swift */; };
+		88DA3D2A28CC6D7100961197 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2928CC6D7100961197 /* MainTabBarViewController.swift */; };
+		88DA3D2C28CC6E7D00961197 /* CommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		885AA87028CA142500BFC779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885AA87928CA19EF00BFC779 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		88DA3D2728CC660600961197 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		88DA3D2928CC6D7100961197 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			children = (
 				885AA86228CA142500BFC779 /* AppDelegate.swift */,
 				885AA86428CA142500BFC779 /* SceneDelegate.swift */,
+				88DA3D2928CC6D7100961197 /* MainTabBarViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -78,8 +83,9 @@
 		885AA87728CA16C600BFC779 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				885AA86628CA142500BFC779 /* AuthViewController.swift */,
-				885AA87928CA19EF00BFC779 /* FriendsViewController.swift */,
+				88DA3D2D28CC78B000961197 /* Auth */,
+				88DA3D2E28CC78BE00961197 /* Friends */,
+				88DA3D3028CC78DF00961197 /* Communities */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -100,6 +106,30 @@
 				88DA3D2728CC660600961197 /* Session.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		88DA3D2D28CC78B000961197 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				885AA86628CA142500BFC779 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		88DA3D2E28CC78BE00961197 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				885AA87928CA19EF00BFC779 /* FriendsViewController.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		88DA3D3028CC78DF00961197 /* Communities */ = {
+			isa = PBXGroup;
+			children = (
+				88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */,
+			);
+			path = Communities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				88DA3D2828CC660600961197 /* Session.swift in Sources */,
+				88DA3D2C28CC6E7D00961197 /* CommunitiesViewController.swift in Sources */,
 				885AA87A28CA19EF00BFC779 /* FriendsViewController.swift in Sources */,
 				885AA86728CA142500BFC779 /* AuthViewController.swift in Sources */,
+				88DA3D2A28CC6D7100961197 /* MainTabBarViewController.swift in Sources */,
 				885AA86328CA142500BFC779 /* AppDelegate.swift in Sources */,
 				885AA86528CA142500BFC779 /* SceneDelegate.swift in Sources */,
 			);
