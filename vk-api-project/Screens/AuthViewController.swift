@@ -88,7 +88,9 @@ extension AuthViewController: WKNavigationDelegate {
         
         guard let token = params["access_token"], let expiresIn = params["expires_in"], let userId = params["user_id"] else { return }
         
-        print("TOKEn->", token)
+        Session.shared.token = token
+        Session.shared.expiresIn = Int(expiresIn) ?? 0
+        Session.shared.userId = Int(userId) ?? 0
         
         let friendsViewController = FriendsViewController()
         navigationController?.pushViewController(friendsViewController, animated: true)
