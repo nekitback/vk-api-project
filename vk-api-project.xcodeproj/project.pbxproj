@@ -19,6 +19,7 @@
 		887653DC28CCE61F00B2761A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 887653DB28CCE61F00B2761A /* SDWebImage */; };
 		887653DE28CCE63F00B2761A /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887653DD28CCE63F00B2761A /* FriendCell.swift */; };
 		887653E128CCE6A000B2761A /* UIView+PinEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887653E028CCE6A000B2761A /* UIView+PinEdges.swift */; };
+		887D61C228CDED3F0043358F /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D61C128CDED3F0043358F /* Data+PrettyJSON.swift */; };
 		88DA3D2828CC660600961197 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2728CC660600961197 /* Session.swift */; };
 		88DA3D2A28CC6D7100961197 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2928CC6D7100961197 /* MainTabBarViewController.swift */; };
 		88DA3D2C28CC6E7D00961197 /* CommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */; };
@@ -38,6 +39,7 @@
 		887653D828CCE59F00B2761A /* FriendsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsResponse.swift; sourceTree = "<group>"; };
 		887653DD28CCE63F00B2761A /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		887653E028CCE6A000B2761A /* UIView+PinEdges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinEdges.swift"; sourceTree = "<group>"; };
+		887D61C128CDED3F0043358F /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
 		88DA3D2728CC660600961197 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		88DA3D2928CC6D7100961197 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				887653E028CCE6A000B2761A /* UIView+PinEdges.swift */,
+				887D61C128CDED3F0043358F /* Data+PrettyJSON.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				885AA86728CA142500BFC779 /* AuthViewController.swift in Sources */,
 				88DA3D2A28CC6D7100961197 /* MainTabBarViewController.swift in Sources */,
 				885AA86328CA142500BFC779 /* AppDelegate.swift in Sources */,
+				887D61C228CDED3F0043358F /* Data+PrettyJSON.swift in Sources */,
 				885AA86528CA142500BFC779 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
