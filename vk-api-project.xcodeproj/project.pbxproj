@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8828BC1B28CF76EF00EC1728 /* CommunitiesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8828BC1A28CF76EF00EC1728 /* CommunitiesAPI.swift */; };
+		8828BC2128CF799200EC1728 /* CommunitiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8828BC2028CF799200EC1728 /* CommunitiesResponse.swift */; };
 		885AA86328CA142500BFC779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AA86228CA142500BFC779 /* AppDelegate.swift */; };
 		885AA86528CA142500BFC779 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AA86428CA142500BFC779 /* SceneDelegate.swift */; };
 		885AA86728CA142500BFC779 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AA86628CA142500BFC779 /* AuthViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8828BC1A28CF76EF00EC1728 /* CommunitiesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesAPI.swift; sourceTree = "<group>"; };
+		8828BC2028CF799200EC1728 /* CommunitiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesResponse.swift; sourceTree = "<group>"; };
 		885AA85F28CA142500BFC779 /* vk-api-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vk-api-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		885AA86228CA142500BFC779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		885AA86428CA142500BFC779 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				887653D828CCE59F00B2761A /* FriendsResponse.swift */,
+				8828BC2028CF799200EC1728 /* CommunitiesResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			children = (
 				88DA3D2728CC660600961197 /* Session.swift */,
 				887653D528CCE4DA00B2761A /* FriendsAPI.swift */,
+				8828BC1A28CF76EF00EC1728 /* CommunitiesAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -247,9 +253,11 @@
 				887653DE28CCE63F00B2761A /* FriendCell.swift in Sources */,
 				887653D428CCE47D00B2761A /* FriendsViewModel.swift in Sources */,
 				88DA3D2828CC660600961197 /* Session.swift in Sources */,
+				8828BC1B28CF76EF00EC1728 /* CommunitiesAPI.swift in Sources */,
 				887653E128CCE6A000B2761A /* UIView+PinEdges.swift in Sources */,
 				887653D928CCE59F00B2761A /* FriendsResponse.swift in Sources */,
 				88DA3D2C28CC6E7D00961197 /* CommunitiesViewController.swift in Sources */,
+				8828BC2128CF799200EC1728 /* CommunitiesResponse.swift in Sources */,
 				885AA87A28CA19EF00BFC779 /* FriendsViewController.swift in Sources */,
 				887653D628CCE4DA00B2761A /* FriendsAPI.swift in Sources */,
 				885AA86728CA142500BFC779 /* AuthViewController.swift in Sources */,
