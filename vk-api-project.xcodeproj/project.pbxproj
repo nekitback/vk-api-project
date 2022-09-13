@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8809B45928D0493800245408 /* CommunitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809B45828D0493800245408 /* CommunitiesViewModel.swift */; };
 		8828BC1B28CF76EF00EC1728 /* CommunitiesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8828BC1A28CF76EF00EC1728 /* CommunitiesAPI.swift */; };
 		8828BC2128CF799200EC1728 /* CommunitiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8828BC2028CF799200EC1728 /* CommunitiesResponse.swift */; };
 		885AA86328CA142500BFC779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AA86228CA142500BFC779 /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8809B45828D0493800245408 /* CommunitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewModel.swift; sourceTree = "<group>"; };
 		8828BC1A28CF76EF00EC1728 /* CommunitiesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesAPI.swift; sourceTree = "<group>"; };
 		8828BC2028CF799200EC1728 /* CommunitiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesResponse.swift; sourceTree = "<group>"; };
 		885AA85F28CA142500BFC779 /* vk-api-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vk-api-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */,
+				8809B45828D0493800245408 /* CommunitiesViewModel.swift */,
 			);
 			path = Communities;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				88DA3D2A28CC6D7100961197 /* MainTabBarViewController.swift in Sources */,
 				885AA86328CA142500BFC779 /* AppDelegate.swift in Sources */,
 				887D61C228CDED3F0043358F /* Data+PrettyJSON.swift in Sources */,
+				8809B45928D0493800245408 /* CommunitiesViewModel.swift in Sources */,
 				885AA86528CA142500BFC779 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
