@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8809B45928D0493800245408 /* CommunitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809B45828D0493800245408 /* CommunitiesViewModel.swift */; };
+		8809B45B28D04BA900245408 /* CommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809B45A28D04BA900245408 /* CommunityCell.swift */; };
 		8828BC1B28CF76EF00EC1728 /* CommunitiesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8828BC1A28CF76EF00EC1728 /* CommunitiesAPI.swift */; };
 		8828BC2128CF799200EC1728 /* CommunitiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8828BC2028CF799200EC1728 /* CommunitiesResponse.swift */; };
 		885AA86328CA142500BFC779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885AA86228CA142500BFC779 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		8809B45828D0493800245408 /* CommunitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewModel.swift; sourceTree = "<group>"; };
+		8809B45A28D04BA900245408 /* CommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCell.swift; sourceTree = "<group>"; };
 		8828BC1A28CF76EF00EC1728 /* CommunitiesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesAPI.swift; sourceTree = "<group>"; };
 		8828BC2028CF799200EC1728 /* CommunitiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesResponse.swift; sourceTree = "<group>"; };
 		885AA85F28CA142500BFC779 /* vk-api-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vk-api-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +175,7 @@
 			children = (
 				88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */,
 				8809B45828D0493800245408 /* CommunitiesViewModel.swift */,
+				8809B45A28D04BA900245408 /* CommunityCell.swift */,
 			);
 			path = Communities;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				887653DE28CCE63F00B2761A /* FriendCell.swift in Sources */,
 				887653D428CCE47D00B2761A /* FriendsViewModel.swift in Sources */,
 				88DA3D2828CC660600961197 /* Session.swift in Sources */,
+				8809B45B28D04BA900245408 /* CommunityCell.swift in Sources */,
 				8828BC1B28CF76EF00EC1728 /* CommunitiesAPI.swift in Sources */,
 				887653E128CCE6A000B2761A /* UIView+PinEdges.swift in Sources */,
 				887653D928CCE59F00B2761A /* FriendsResponse.swift in Sources */,
