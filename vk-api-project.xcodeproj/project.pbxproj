@@ -27,6 +27,7 @@
 		88DA3D2828CC660600961197 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2728CC660600961197 /* Session.swift */; };
 		88DA3D2A28CC6D7100961197 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2928CC6D7100961197 /* MainTabBarViewController.swift */; };
 		88DA3D2C28CC6E7D00961197 /* CommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA3D2B28CC6E7D00961197 /* CommunitiesViewController.swift */; };
+		88DD649C28D717ED00529675 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 88DD649B28D717ED00529675 /* SwiftKeychainWrapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DD649C28D717ED00529675 /* SwiftKeychainWrapper in Frameworks */,
 				887653DC28CCE61F00B2761A /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +200,7 @@
 			name = "vk-api-project";
 			packageProductDependencies = (
 				887653DB28CCE61F00B2761A /* SDWebImage */,
+				88DD649B28D717ED00529675 /* SwiftKeychainWrapper */,
 			);
 			productName = "vk-api-project";
 			productReference = 885AA85F28CA142500BFC779 /* vk-api-project.app */;
@@ -229,6 +232,7 @@
 			mainGroup = 885AA85628CA142500BFC779;
 			packageReferences = (
 				887653DA28CCE61F00B2761A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				88DD649A28D717ED00529675 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = 885AA86028CA142500BFC779 /* Products */;
 			projectDirPath = "";
@@ -490,6 +494,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		88DD649A28D717ED00529675 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -497,6 +509,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 887653DA28CCE61F00B2761A /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		88DD649B28D717ED00529675 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DD649A28D717ED00529675 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

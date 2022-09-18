@@ -23,6 +23,9 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         setupConstraints()
+        if Session.shared.isTokenValid {
+            showMainTabBarScreen()
+        }
         authorizeVK()
     }
     
@@ -62,6 +65,11 @@ class AuthViewController: UIViewController {
         webView.load(request)
     }
     
+    //MARK: - Navigation
+    private func showMainTabBarScreen() {
+        let mainTabBarViewController = MainTabBarViewController()
+        navigationController?.pushViewController(mainTabBarViewController, animated: true)
+    }
 }
 
 // MARK: - WKNavigationDelegate
@@ -89,11 +97,10 @@ extension AuthViewController: WKNavigationDelegate {
         guard let token = params["access_token"], let expiresIn = params["expires_in"], let userId = params["user_id"] else { return }
         
         Session.shared.token = token
-        Session.shared.expiresIn = Int(expiresIn) ?? 0
+        Session.shared.expiresIn = Date(timeIntervalSinceNow: Double(expiresIn) ?? 0)
         Session.shared.userId = Int(userId) ?? 0
         
-        let mainTabBarViewController = MainTabBarViewController()
-        navigationController?.pushViewController(mainTabBarViewController, animated: true)
+        showMainTabBarScreen()
         
         decisionHandler(.cancel)
     }
