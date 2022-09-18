@@ -29,7 +29,7 @@ class MainTabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.hidesBackButton = true
         let controllers: [UIViewController] = [friendsViewController, groupsViewController]
         self.viewControllers = controllers
     }
